@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import Logo from '../assets/logo.png';
+import Logo from '../../public/Duckie.jpg';
 ---
 
 <script>
@@ -17,17 +17,17 @@ import Logo from '../assets/logo.png';
 </script>
 
 <header
-  class='px-5 md:px-10 py-5 bg-blue-400 flex items-center justify-between shadow-lg border-b-2 border-blue-500'
+  class='px-5 md:px-28 lg:px-48 py-5 bg-yellow-400 flex items-center justify-between shadow-lg border-b-2 border-yellow-500'
 >
   <Image
     src={Logo}
     alt='logo'
-    class='w-20 md:w-24 bg-white rounded-full border-2 border-blue-500'
+    class='w-20 md:w-24 bg-white rounded-full border-2 border-yellow-500'
   />
 
   <nav>
     <ul
-      class='md:flex gap-8 text-2xl font-semibold text-white hidden font-customFont'
+      class='lg:flex gap-8 text-2xl font-semibold text-white hidden font-customFont'
     >
       <li>
         <a href='/'>home</a>
@@ -39,18 +39,15 @@ import Logo from '../assets/logo.png';
         <a href='#how-to-buy'>how to buy</a>
       </li>
       <li>
-        <a href='#why-pingo'>why pingo?</a>
+        <a href='#why-duckie'>why duckie?</a>
       </li>
       <li>
         <a href='#tokenomics'>tokenomics</a>
       </li>
-      <li>
-        <a href='#roadmap'>roadmap</a>
-      </li>
     </ul>
   </nav>
   <svg
-    class='md:hidden'
+    class='lg:hidden'
     id='hamburger-menu'
     width='40px'
     height='40px'
@@ -68,15 +65,15 @@ import Logo from '../assets/logo.png';
 </header>
 
 <style scoped>
-  li {
+  /* li {
     text-shadow:
-      2px 0 #2873ff,
-      -2px 0 #2873ff,
-      0 2px #2873ff,
-      0 -2px #2873ff,
-      1px 1px #2873ff,
-      -1px -1px #2873ff,
-      1px -1px #2873ff,
-      -1px 1px #2873ff;
-  }
+      2px 0 #e5b400,
+      -2px 0 #e5b400,
+      0 2px #e5b400,
+      0 -2px #e5b400,
+      1px 1px #e5b400,
+      -1px -1px #e5b400,
+      1px -1px #e5b400,
+      -1px 1px #e5b400;
+  } */
 </style>

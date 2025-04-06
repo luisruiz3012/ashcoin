@@ -1,7 +1,6 @@
 ---
 import Header from '../components/Header.astro';
-import Logo from '../assets/logo.png';
-import Swap from '../assets/swap.jpg';
+import Logo from '../../public/Duckie.jpg';
 import { Image } from 'astro:assets';
 import Footer from '../components/Footer.astro';
 import MobileMenu from '../containers/MobileMenu.astro';
@@ -10,67 +9,70 @@ import MobileMenu from '../containers/MobileMenu.astro';
 <html lang='en'>
   <head>
     <meta charset='utf-8' />
-    <link rel='icon' type='image/svg+xml' href='/logo.png' />
+    <link rel='icon' type='image/svg+xml' href='/Duckie.jpg' />
     <meta name='viewport' content='width=device-width' />
     <meta name='generator' content={Astro.generator} />
-    <title>Pingo Coin</title>
+    <title>Duckie | The coolest Duck on Solana</title>
   </head>
   <body>
     <Header />
     <MobileMenu />
-    <section class='min-h-screen bg-blue-200 p-14 md:p-24'>
+    <section class='min-h-screen bg-yellow-200 p-14 md:p-24'>
       <section class='flex items-center justify-center gap-20 flex-wrap'>
         <div
-          class='lg:w-1/2 px-10 py-20 bg-blue-400 border border-blue-500 rounded-3xl'
+          class='lg:w-1/2 px-10 py-20 bg-yellow-400 rounded-3xl'
         >
           <h2 class='text-white font-customFont text-6xl'>Meet</h2>
-          <h1 class='font-customFont text-white'>Pingo</h1>
-          <p class='mt-12 text-xl text-white'>
-            <span class='font-customFont'>Pingo</span> is the next big memecoin that
-            combines the charm of everyone's favorite animal, the penguin, with the
+          <h1 class='font-customFont text-white'>Duckie</h1>
+          <!-- <p class='mt-12 text-xl text-white'>
+            <span class='font-customFont'>Duckie</span> is the next big memecoin that
+            combines the charm of everyone's favorite animal, the Duck, with the
             energy of memecoins. With a community-driven approach and a focus on
-            fun, <span class='font-customFont'>Pingo</span> is poised to become the
+            fun, <span class='font-customFont'>Duckie</span> is poised to become the
             coolest memecoin on the market.
+          </p> -->
+          <p class="mt-2 text-xl text-white">
+            The most quack-tacular memecoin. A duck with attitude soaring high in the crypto world! Fun, community, and pure feathered chaos. The time of "croak" is over, it's time to "quack"
           </p>
         </div>
         <div class='md:w/1-2'>
           <Image
             src={Logo}
             alt='logo'
-            class='bg-white rounded-full border-8 w-96 border-blue-500'
+            class='bg-white rounded-full border-8 w-96 border-yellow-500'
           />
         </div>
       </section>
     </section>
     <section
       id='about'
-      class='bg-blue-400 w-full min-h-screen border-t border-blue-500 py-16 px-10 md:px-24'
+      class='bg-yellow-400 w-full min-h-screen border-t border-yellow-500 py-16 px-10 md:px-24'
     >
       <h3 class='text-white font-customFont text-center'>About</h3>
       <p class='text-white text-xl my-24'>
-        <span class='font-customFont'>Pingo Coin</span> is a fresh, community-driven
-        memecoin that blends the lovable charm of penguins with the dynamic energy
+        <span class='font-customFont'>Duckie Coin</span> is a fresh, community-driven
+        memecoin that blends the lovable charm of Ducks with the dynamic energy
         of cryptocurrency. Designed to bring both fun and opportunity to the crypto
-        space, Pingo isn't just another coin—it's a movement. Our mission is simple:
+        space, Duckie isn't just another coin—it's a movement. Our mission is simple:
         build a lighthearted, inclusive community where everyone can participate
         in the journey of financial growth, all while having a blast.
         <br />
         <br />
-        With our adorable yet cheeky penguin mascot, <span
-          class='font-customFont'>Pingo Coin</span
-        > aims to be a symbol of resilience and adaptability, much like the penguin
-        itself. Whether you're new to crypto or a seasoned trader, Pingo offers a
+        With our adorable yet cheeky Duck mascot, <span
+          class='font-customFont'>Duckie Coin</span
+        > aims to be a symbol of resilience and adaptability, much like the Duck
+        itself. Whether you're new to crypto or a seasoned trader, Duckie offers a
         chance to join a project that doesn’t take itself too seriously while still
         offering serious potential.
         <br />
         <br />
 
-        <span class='font-customFont'>Pingo</span> is more than just a token—it's
+        <span class='font-customFont'>Duckie</span> is more than just a token—it's
         an experience, a meme, and a growing community. We believe that the future
         of crypto is not just about technology, but also about fun, creativity, and
-        connection. So whether you're here to hodl or just along for the penguin-powered
+        connection. So whether you're here to hodl or just along for the Duck-powered
         ride,
-        <span class='font-customFont'>Pingo Coin</span> is your ticket to the coolest
+        <span class='font-customFont'>Duckie Coin</span> is your ticket to the coolest
         crypto adventure around.
         <br />
         <br />
@@ -79,45 +81,45 @@ import MobileMenu from '../containers/MobileMenu.astro';
       </p>
     </section>
 
-    <section class='min-h-screen bg-blue-200 p-10 md:p-24' id='how-to-buy'>
+    <section class='min-h-screen bg-yellow-200 p-10 md:p-24' id='how-to-buy'>
       <h3 class='font-customFont text-white text-center'>How to buy</h3>
 
       <div class='my-20 flex flex-col gap-10'>
         <article
-          class='w-full flex items-center justify-start gap-10 flex-wrap md:flex-nowrap text-white bg-blue-400 rounded-lg border-2 border-blue-500 p-10 text-lg'
+          class='w-full flex items-center justify-start gap-10 flex-wrap md:flex-nowrap text-white bg-yellow-400 rounded-lg border-2 border-yellow-500 p-10 text-lg'
         >
           <img
-            src='//images.ctfassets.net/9sy2a0egs6zh/2qy1wS5MmZOXkXn9yFlGJp/f3797a512c283e6f71450abd408b7452/mm-logo-white.svg'
-            class='w-36'
+            src='https://187760183-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MVOiF6Zqit57q_hxJYp%2Ficon%2FU7kNZ4ygz4QW1rUwOuTT%2FWhite%20Ghost_docs_nu.svg?alt=media&token=447b91f6-db6d-4791-902d-35d75c19c3d1'
+            class='w-28 rounded-full'
           />
 
           <div>
             <h2 class='text-white font-customFont text-4xl'>
-              Download Metamask
+              Download Phantom Wallet
             </h2>
             <p>
               Metamask is one of the most popular crypto wallets on the market.
               You can download it on IOS and Adroid or you can even download the
-              browser extension and become part of the Shido ecosystem.
+              browser extension and become part of the Solana ecosystem.
             </p>
           </div>
         </article>
 
         <article
-          class='w-full flex items-center justify-center gap-10 flex-wrap md:flex-nowrap text-white bg-blue-400 rounded-lg border-2 border-blue-500 p-10 text-lg'
+          class='w-full flex items-center justify-center gap-10 flex-wrap md:flex-nowrap text-white bg-yellow-400 rounded-lg border-2 border-yellow-500 p-10 text-lg'
         >
           <img
-            src='https://shido.io/wp-content/uploads/2023/12/Image-2.svg'
-            class='w-36'
+            src='/solana.webp'
+            class='w-28'
           />
 
           <div>
             <h2 class='text-white font-customFont text-4xl'>
-              Get some <span>$SHIDO</span>
+              Get some <span>$SOL</span>
             </h2>
             <p>
               Once you have your Metamasl Wallet installed and setup, it's time
-              to get some $SHIDO to start trading. You can buy some $SHIDO at
+              to get some $SOL to start trading. You can buy some $SOL at
               your favourite CEX and transfer it to your Metamask Wallet to
               start trading.
             </p>
@@ -125,19 +127,22 @@ import MobileMenu from '../containers/MobileMenu.astro';
         </article>
 
         <article
-          class='w-full flex items-center justify-center gap-10 flex-wrap md:flex-nowrap text-white bg-blue-400 rounded-lg border-2 border-blue-500 p-10 text-lg'
+          class='w-full flex items-center justify-center gap-10 flex-wrap md:flex-nowrap text-white bg-yellow-400 rounded-lg border-2 border-yellow-500 p-10 text-lg'
         >
-          <img src='https://gempad.app/logo/logo.svg' class='w-16 pl-4' />
+        <img
+        src='https://research.binance.com/static/images/projects/raydium/logo.png'
+        class='w-28 rounded-full'
+      />
 
           <div>
             <h2 class='text-white font-customFont text-4xl'>
-              Go to Gempad.app
+              Go to Raydium
             </h2>
             <p>
-              Once you have $SHIDO on your Metamask Wallet, it's time to trade
-              it for some $PINGO. To do that, you can go to our Gempad.app page
+              Once you have $SOL on your Metamask Wallet, it's time to trade
+              it for some $Duckie. To do that, you can go to our Raydium liquidity pool
               <!-- <a
-                class='text-blue-600 underline font-bold'
+                class='text-yellow-600 underline font-bold'
                 href='https://pump.fun/HZhBACLZxwRbecoHsiqmbQeFha3kzWeJWXkEBDfGpump'
                 >Click here</a
               > -->
@@ -146,16 +151,16 @@ import MobileMenu from '../containers/MobileMenu.astro';
         </article>
 
         <article
-          class='w-full flex items-center justify-center gap-10 flex-wrap md:flex-nowrap text-white bg-blue-400 rounded-lg border-2 border-blue-500 p-10 text-lg'
+          class='w-full flex items-center justify-center gap-10 flex-wrap md:flex-nowrap text-white bg-yellow-400 rounded-lg border-2 border-yellow-500 p-10 text-lg'
         >
-          <img src='/logo.png' class='w-20' />
+          <img src='/Duckie.jpg' class='w-28 rounded-full border-4 border-yellow-600' />
 
           <div>
             <h2 class='text-white font-customFont text-4xl'>
-              Exchange <span>$SHIDO</span> for $PINGO
+              Exchange <span>$SOL</span> for $Duckie
             </h2>
             <p>
-              You can trade some $SHIDO for $PINGO. We have ZERO taxes so you
+              You can trade some $SOL for $Duckie. We have ZERO taxes so you
               don’t need to worry about buying with a specific slippage,
               although you may need to use slippage during times of market
               volatility.
@@ -166,34 +171,34 @@ import MobileMenu from '../containers/MobileMenu.astro';
     </section>
 
     <section
-      id='why-pingo'
-      class='bg-blue-400 w-full min-h-screen border-t border-blue-500 py-16 px-10 md:px-24'
+      id='why-duckie'
+      class='bg-yellow-400 w-full min-h-screen border-t border-yellow-500 py-16 px-10 md:px-24'
     >
-      <h3 class='text-white font-customFont text-center'>Why Pingo?</h3>
+      <h3 class='text-white font-customFont text-center'>Why Duckie?</h3>
 
       <ul class='my-16 flex flex-col gap-10'>
         <li class='text-2xl md:text-5xl text-white font-customFont list-disc'>
-          <b class='underline'>Community-Driven:</b> Pingo Coin is built by and for
+          <b class='underline'>Community-Driven:</b> Duckie Coin is built by and for
           its community, focusing on fun and inclusivity. Joining early means becoming
           part of a passionate and growing community.
         </li>
 
         <li class='text-2xl md:text-5xl text-white font-customFont list-disc'>
-          <b class='underline'>Fun & Lighthearted:</b> Pingo brings a unique, meme-inspired
-          approach to crypto with its playful penguin mascot, making it more than
+          <b class='underline'>Fun & Lighthearted:</b> Duckie brings a unique, meme-inspired
+          approach to crypto with its playful Duck mascot, making it more than
           just an investment—it's an enjoyable experience.
         </li>
 
         <li class='text-2xl md:text-5xl text-white font-customFont list-disc'>
           <b class='underline'>Low Entry Price:</b> With an affordable entry point,
-          Pingo allows new investors to get in on the ground floor with the potential
+          Duckie allows new investors to get in on the ground floor with the potential
           for significant returns as the coin gains traction.
         </li>
       </ul>
     </section>
 
     <section
-      class='min-h-screen bg-blue-200 py-16 px-10 md:px-24'
+      class='min-h-screen bg-yellow-200 py-16 px-10 md:px-24'
       id='tokenomics'
     >
       <h5 class='font-customFont text-white text-center'>Tokenomics</h5>
@@ -201,53 +206,31 @@ import MobileMenu from '../containers/MobileMenu.astro';
       <div class='flex justify-between items-center flex-col md:flex-row'>
         <div class='md:w-2/3 flex flex-col items-center'>
           <article
-            class='w-full flex items-center justify-start gap-4 flex-wrap md:flex-nowrap text-white bg-blue-400 rounded-lg border-2 border-blue-500 p-10 text-lg my-12 flex-col md:mt-24'
+            class='w-full flex items-center justify-start gap-4 flex-wrap md:flex-nowrap text-white bg-yellow-400 rounded-lg border-2 border-yellow-500 p-10 text-lg my-12 flex-col md:mt-24'
           >
             <h5 class='font-customFont text-5xl'>Total Supply:</h5>
             <h5 class='font-customFont text-4xl text-center'>
-              50,000,000,000 $PINGO
+              1,000,000,000 $Duckie
             </h5>
           </article>
 
           <article
-            class='w-full flex items-center justify-start gap-4 flex-wrap text-wrap md:flex-nowrap text-white bg-blue-400 rounded-lg border-2 border-blue-500 p-10 text-lg flex-col'
+            class='w-full flex items-center justify-start gap-4 flex-wrap text-wrap md:flex-nowrap text-white bg-yellow-400 rounded-lg border-2 border-yellow-500 p-10 text-lg flex-col'
           >
             <h5 class='font-customFont text-5xl'>Token address:</h5>
             <h5
               class='font-customFont text-lg text-center md:text-4xl text-wrap'
             >
-              0xd578576523b8Fc9F58E 7F48FC99f3bBEC0756479
+            mntDf2RuNsgwZNBJjK5cwCdFX<br />eEXANTfKLwAqDXsr51
             </h5>
           </article>
         </div>
 
-        <img src='/logo.png' class='md:w-1/3 h-full my-10' />
+        <img src='/Duckie.jpg' class=' rounded-full md:w-1/3 h-full lg:mt-20 lg:ml-10' />
       </div>
     </section>
 
-    <section
-      id='why-pingo'
-      class='bg-blue-400 w-full min-h-screen border-t border-blue-500 py-16 px-10 md:px-24'
-    >
-      <h3 class='font-customFont text-white text-center'>Swap platform</h3>
-
-      <p class='text-center md:text-pretty my-20 text-white text-xl'>
-        As the project and the community grow, our team is planning on building
-        it's own swap platform. Stay tuned for any updates on our social media
-      </p>
-
-      <img src='/swap.jpg' class="class='w-fit my-20" alt='Swap platform' />
-    </section>
-
-    <section class='min-h-screen bg-blue-200 py-16 px-10 md:px-24' id='roadmap'>
-      <h5 class='font-customFont text-white text-center'>Roadmap</h5>
-      <div
-        class='flex items-center justify-center mt-10 md:mt-20 mb-10 flex-wrap'
-      >
-        <img src='/roadmap1.png' />
-        <img src='/roadmap2.png' />
-      </div>
-    </section>
+    
     <Footer />
   </body>
 </html>
@@ -270,45 +253,45 @@ import MobileMenu from '../containers/MobileMenu.astro';
   h4 {
     font-size: 10rem;
     line-height: 8rem;
-    stroke: blue;
+    stroke: yellow;
     text-shadow:
-      2px 0 #2873ff,
-      -2px 0 #2873ff,
-      0 2px #2873ff,
-      0 -2px #2873ff,
-      1px 1px #2873ff,
-      -1px -1px #2873ff,
-      1px -1px #2873ff,
-      -1px 1px #2873ff;
+      2px 0 #e5b400,
+      -2px 0 #e5b400,
+      0 2px #e5b400,
+      0 -2px #e5b400,
+      1px 1px #e5b400,
+      -1px -1px #e5b400,
+      1px -1px #e5b400,
+      -1px 1px #e5b400;
   }
 
   h5 {
     font-size: 10rem;
     line-height: 8rem;
-    stroke: blue;
+    stroke: yellow;
     text-shadow:
-      2px 0 #2873ff,
-      -2px 0 #2873ff,
-      0 2px #2873ff,
-      0 -2px #2873ff,
-      1px 1px #2873ff,
-      -1px -1px #2873ff,
-      1px -1px #2873ff,
-      -1px 1px #2873ff;
+      2px 0 #e5b400,
+      -2px 0 #e5b400,
+      0 2px #e5b400,
+      0 -2px #e5b400,
+      1px 1px #e5b400,
+      -1px -1px #e5b400,
+      1px -1px #e5b400,
+      -1px 1px #e5b400;
   }
 
   h2,
   span,
   li {
     text-shadow:
-      2px 0 #2873ff,
-      -2px 0 #2873ff,
-      0 2px #2873ff,
-      0 -2px #2873ff,
-      1px 1px #2873ff,
-      -1px -1px #2873ff,
-      1px -1px #2873ff,
-      -1px 1px #2873ff;
+      2px 0 #e5b400,
+      -2px 0 #e5b400,
+      0 2px #e5b400,
+      0 -2px #e5b400,
+      1px 1px #e5b400,
+      -1px -1px #e5b400,
+      1px -1px #e5b400,
+      -1px 1px #e5b400;
   }
 
   @media screen and (max-width: 768px) {
